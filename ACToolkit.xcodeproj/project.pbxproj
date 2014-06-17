@@ -15,9 +15,9 @@
 		66F4E06419510437001E4734 /* UIAlertView+AlertShortcuts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UIAlertView+AlertShortcuts.m"; path = "Classes/UIAlertView+AlertShortcuts.m"; sourceTree = "<group>"; };
 		66F4E065195104FE001E4734 /* UIColor+HexString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIColor+HexString.h"; path = "Classes/UIColor+HexString.h"; sourceTree = "<group>"; };
 		66F4E066195104FE001E4734 /* UIColor+HexString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UIColor+HexString.m"; path = "Classes/UIColor+HexString.m"; sourceTree = "<group>"; };
-		66F4E06819510625001E4734 /* ACColorKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ACColorKit.h; sourceTree = "<group>"; };
-		66F4E06919510625001E4734 /* ACColorKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ACColorKit.m; sourceTree = "<group>"; };
 		66F4E06A19510646001E4734 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		66F4E06B1951090E001E4734 /* ACColorKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ACColorKit.m; path = Classes/ACColorKit.m; sourceTree = "<group>"; };
+		66F4E06C1951090E001E4734 /* ACColorKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ACColorKit.h; path = Classes/ACColorKit.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -48,8 +48,8 @@
 		66F4E0671951060B001E4734 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				66F4E06819510625001E4734 /* ACColorKit.h */,
-				66F4E06919510625001E4734 /* ACColorKit.m */,
+				66F4E06B1951090E001E4734 /* ACColorKit.m */,
+				66F4E06C1951090E001E4734 /* ACColorKit.h */,
 			);
 			name = Classes;
 			sourceTree = "<group>";

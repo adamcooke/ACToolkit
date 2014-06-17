@@ -4,7 +4,13 @@ This library contains a number of useful extensions & classes which I've creared
 
 ## Installation
 
-At present this tool is in development however it will be released as a Cocoapod shortly.
+At present this tool is in development however it will be released as a Cocoapod shortly. 
+
+You can import all extensions using the following import statement in your application.
+
+```objective-c
+#import <ACToolkit/ACToolkit.h>
+```
 
 ## Extensions
 

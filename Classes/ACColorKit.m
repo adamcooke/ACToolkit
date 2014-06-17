@@ -6,6 +6,7 @@
 //
 
 #import "ACColorKit.h"
+#import "UIColor+HexString.h"
 
 @implementation ACColorKit
 
@@ -29,13 +30,7 @@
 }
 
 - (void)addColorWithHexString:(NSString *)hexString withName:(NSString *)name; {
-    unsigned int hexInt = 0;
-    NSScanner *scanner = [NSScanner scannerWithString:hexString];
-    [scanner setCharactersToBeSkipped:[NSCharacterSet characterSetWithCharactersInString:@"#"]];
-    [scanner scanHexInt:&hexInt];
-    
-    UIColor *color = [UIColor colorWithRed:((CGFloat) ((hexInt & 0xFF0000) >> 16))/255 green:((CGFloat) ((hexInt & 0xFF00) >> 8))/255 blue:((CGFloat) (hexInt & 0xFF))/255 alpha:1];
-    [self addColor:color withName:name];
+    [self addColor:[UIColor colorWithHexString:hexString] withName:name];
 }
 
 - (UIColor *)colorWithName:(NSString *)name {
