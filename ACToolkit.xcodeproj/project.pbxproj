@@ -6,11 +6,38 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXFileReference section */
+		66F4E05E19510229001E4734 /* NSThread+MainThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSThread+MainThread.h"; path = "Classes/NSThread+MainThread.h"; sourceTree = "<group>"; };
+		66F4E05F19510229001E4734 /* NSThread+MainThread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "NSThread+MainThread.m"; path = "Classes/NSThread+MainThread.m"; sourceTree = "<group>"; };
+		66F4E06019510274001E4734 /* ACToolkit.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = ACToolkit.podspec; sourceTree = "<group>"; };
+		66F4E06219510419001E4734 /* ACToolkit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ACToolkit.h; path = Classes/ACToolkit.h; sourceTree = "<group>"; };
+		66F4E06319510437001E4734 /* UIAlertView+AlertShortcuts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIAlertView+AlertShortcuts.h"; path = "Classes/UIAlertView+AlertShortcuts.h"; sourceTree = "<group>"; };
+		66F4E06419510437001E4734 /* UIAlertView+AlertShortcuts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UIAlertView+AlertShortcuts.m"; path = "Classes/UIAlertView+AlertShortcuts.m"; sourceTree = "<group>"; };
+		66F4E065195104FE001E4734 /* UIColor+HexString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIColor+HexString.h"; path = "Classes/UIColor+HexString.h"; sourceTree = "<group>"; };
+		66F4E066195104FE001E4734 /* UIColor+HexString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UIColor+HexString.m"; path = "Classes/UIColor+HexString.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
 /* Begin PBXGroup section */
 		66F4E056195101FF001E4734 = {
 			isa = PBXGroup;
 			children = (
+				66F4E06019510274001E4734 /* ACToolkit.podspec */,
+				66F4E05D19510207001E4734 /* Extensions */,
 			);
+			sourceTree = "<group>";
+		};
+		66F4E05D19510207001E4734 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				66F4E06219510419001E4734 /* ACToolkit.h */,
+				66F4E05E19510229001E4734 /* NSThread+MainThread.h */,
+				66F4E05F19510229001E4734 /* NSThread+MainThread.m */,
+				66F4E06319510437001E4734 /* UIAlertView+AlertShortcuts.h */,
+				66F4E06419510437001E4734 /* UIAlertView+AlertShortcuts.m */,
+				66F4E065195104FE001E4734 /* UIColor+HexString.h */,
+				66F4E066195104FE001E4734 /* UIColor+HexString.m */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
