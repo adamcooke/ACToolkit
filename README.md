@@ -51,8 +51,6 @@ This section of this document outlines the various classes which are provided in
 
 This class provides support for defining a set of colors which can be used within your application without any requirement to reinitialize UIColor instances.
 
-#### Usage
-
 When your application starts, you should define the colors you wish to use throughout your application. The mostly likely place you'll want to do this is within your AppDelgate.
 
 ```objective-c
