@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXFileReference section */
+		66DFDC9219523D3900B296F9 /* ACAvatar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ACAvatar.m; path = Classes/ACAvatar.m; sourceTree = "<group>"; };
+		66DFDC9319523D3900B296F9 /* ACAvatar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ACAvatar.h; path = Classes/ACAvatar.h; sourceTree = "<group>"; };
 		66F4E05E19510229001E4734 /* NSThread+MainThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSThread+MainThread.h"; path = "Classes/NSThread+MainThread.h"; sourceTree = "<group>"; };
 		66F4E05F19510229001E4734 /* NSThread+MainThread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "NSThread+MainThread.m"; path = "Classes/NSThread+MainThread.m"; sourceTree = "<group>"; };
 		66F4E06019510274001E4734 /* ACToolkit.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = ACToolkit.podspec; sourceTree = "<group>"; };
@@ -48,6 +50,8 @@
 		66F4E0671951060B001E4734 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				66DFDC9219523D3900B296F9 /* ACAvatar.m */,
+				66DFDC9319523D3900B296F9 /* ACAvatar.h */,
 				66F4E06B1951090E001E4734 /* ACColorKit.m */,
 				66F4E06C1951090E001E4734 /* ACColorKit.h */,
 			);

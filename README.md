@@ -53,6 +53,14 @@ UIColor *myColor = [UIColor colorWithHexString:@"172a37"];
 
 This section of this document outlines the various classes which are provided in this library along with usage examples.
 
+### ACAvatar
+
+A class to allow you to easily cache avatars from a URL which includes {{size}} as a placeholder for specifying the size needed. If the object exists in the cache, it will be returned from there otherwise it will be downloaded over the internet.
+
+```objective-c
+UIImage *avatar = [ACAvatar avatarWithURLString:@"http://server.com/image/?size={{size}}" withSize:72];
+```
+
 ### ACColorKit
 
 This class provides support for defining a set of colors which can be used within your application without any requirement to reinitialize UIColor instances.
