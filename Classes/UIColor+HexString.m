@@ -11,6 +11,20 @@
 @implementation UIColor (HexString)
 
 + (UIColor *)colorWithHexString:(NSString *)hexString {
+    
+    if (![hexString isKindOfClass:[NSString class]]) {
+        return [UIColor blackColor];
+    }
+    
+    if ([hexString length] != 6) {
+        return [UIColor blackColor];
+    }
+    
+    NSPredicate *hexRegex = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", @"^[a-f0-9]{6}$"];
+    if (![hexRegex evaluateWithObject:hexString]) {
+        return [UIColor blackColor];
+    }
+    
     unsigned int hexInt = 0;
     NSScanner *scanner = [NSScanner scannerWithString:hexString];
     [scanner setCharactersToBeSkipped:[NSCharacterSet characterSetWithCharactersInString:@"#"]];
