@@ -12,5 +12,6 @@
 + (NSCache *)avatarCache;
 + (UIImage *)rawAvatar:(NSURL *)url;
 + (UIImage *)avatarWithURLString:(NSString *)url withSize:(int)size;
++ (void)loadAvatarFrom:(NSString *)avatarURL withSize:(int)size intoView:(UIImageView *)destinationView completion:(void (^)(UIImage *image, UIImageView *destinationView))completion;
 
 @end
