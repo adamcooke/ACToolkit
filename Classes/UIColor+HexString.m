@@ -20,7 +20,7 @@
         return [UIColor blackColor];
     }
     
-    NSPredicate *hexRegex = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", @"^[a-f0-9]{6}$"];
+    NSPredicate *hexRegex = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", @"^[a-fA-F0-9]{6}$"];
     if (![hexRegex evaluateWithObject:hexString]) {
         return [UIColor blackColor];
     }
