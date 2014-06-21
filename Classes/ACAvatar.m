@@ -23,10 +23,18 @@
     if (cachedAvatar == nil) {
         NSURL *imageURL = [NSURL URLWithString:urlToFetch];
         UIImage *downloadedAvatar = [self rawAvatar:imageURL];
-        [[self avatarCache] setObject:downloadedAvatar forKey:urlToFetch];
+        if (downloadedAvatar == nil) {
+            [[self avatarCache] setObject:[[NSNull alloc] init] forKey:urlToFetch];
+        } else {
+            [[self avatarCache] setObject:downloadedAvatar forKey:urlToFetch];
+        }
         return downloadedAvatar;
     } else {
-        return cachedAvatar;
+        if ([cachedAvatar isKindOfClass:[NSNull class]]) {
+            return nil;
+        } else {
+            return cachedAvatar;
+        }
     }
 }
 
